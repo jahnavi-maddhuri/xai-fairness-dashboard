@@ -1,0 +1,26 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+*.env
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+
+# Data files (optional — remove if you want tracked)
+data/*.npz
+data/*.csv
+
+# Logs
+*.log
+
