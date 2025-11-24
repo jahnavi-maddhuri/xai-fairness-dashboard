@@ -11,6 +11,7 @@ The Fairness Explorer Dashboard was built to bridge the gap between model comple
 The goal is not only to present SHAP values, but to enable auditable interpretability for any predictive system that may impact real people.
 
 ## Project Structure
+```
 .
 ├── app.py                       # Streamlit dashboard
 ├── plotly_plots.py              # Plotly visualizations (RF vs XGB comparisons, etc.)
@@ -22,7 +23,7 @@ The goal is not only to present SHAP values, but to enable auditable interpretab
 │   └──shap_results_xgb.npz      # Precomputed SHAP results for XGBoost
 ├── requirements.txt
 └── README.md  (this file)
-
+```
 **Included Data**
 The data/ folder already contains:
 - `adult.data` Cleaned version of the Adult Income dataset (classification: income ≤50K vs. >50K).
@@ -37,18 +38,48 @@ As long as files follow the same schema, they can be compared seamlessly.
 
 ## Installation & Setup
 1. Clone the repository
-```bash
+```
 git clone <your-repo-url>
 cd <your-repo-name>
 ```
 2. Create a virtual environment (recommended)
-```bash
+```
 python3 -m venv venv
 source venv/bin/activate  # Mac/Linux
 venv\Scripts\activate     # Windows
 ```
-
 3. Install dependencies
 ```{bash}
 pip install -r requirements.txt
 ```
+
+## Run Dashboard
+```
+streamlit run app.py
+```
+This launches the Fairness Explorer Dashboard in your browser (usually at http://localhost:8501).
+
+If using the precomputed SHAP files in data/, the dashboard loads immediately!
+
+## How to Add New Models
+Train your model (e.g., Random Forest, XGBoost, Logistic Regression, etc.).
+
+Use the provided generator script template:
+- gen_shap_rf.py
+- gen_shap_xgb.py
+OR a custom gen_shap_your_model.py derived from these examples.
+
+Ensure your SHAP output dictionary uses the same feature_name structure as it's comparisons.
+
+Save your results into data/your_shap_file.npz.
+
+Once placed in data/, the dashboard detects the new file and allows comparison.
+
+## Why This Dashboard Matters?
+✔️ **Interpretability** Demonstrates transparent SHAP-based explanations for high-stakes ML tasks.
+✔️ **Usability** Simple, interactive UI with precomputed SHAP values included for instant exploration.
+✔️ **Reproducibility** Code to generate SHAP values is included, Data sources are documented, Schema is standardized
+✔️ **Extensibility** Supports new models, new hyperparameters, fairness-tuning experiments
+✔️ **Technical clarity** Clear structure, modular SHAP-generation scripts, and robust Plotly visualizations.
+
+
