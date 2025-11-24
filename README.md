@@ -89,7 +89,7 @@ Once placed in data/, the dashboard detects the new file and allows comparison.
 
 ### Example Usage
 1. User first selects two models to compare. (If additional models are desired, those must be added prior)
-<img width="1030" height="873" alt="image" src="https://github.com/user-attachments/assets/53be2275-a182-436f-8cfb-cec6fbbda3d5" />
+<img width="826" height="720" alt="image" src="https://github.com/user-attachments/assets/6ec56235-cb19-45a7-890e-e877c254edc0" />
 2. Once user hits "Run comparison analysis" the bar graph below shows.
 <img width="788" height="831" alt="image" src="https://github.com/user-attachments/assets/fca49cc3-c3c4-4b30-843f-af9ec9893c13" />
 
