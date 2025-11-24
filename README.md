@@ -87,3 +87,15 @@ Once placed in data/, the dashboard detects the new file and allows comparison.
 ✔️ **Extensibility** Supports new models, new hyperparameters, fairness-tuning experiments
 
 ✔️ **Technical clarity** Clear structure, modular SHAP-generation scripts, and robust Plotly visualizations.
+
+### Example Usage
+1. User first selects two models to compare. (If additional models are desired, those must be added prior)
+<img width="1030" height="873" alt="image" src="https://github.com/user-attachments/assets/53be2275-a182-436f-8cfb-cec6fbbda3d5" />
+2. Once user hits "Run comparison analysis" the bar graph below shows.
+<img width="788" height="831" alt="image" src="https://github.com/user-attachments/assets/fca49cc3-c3c4-4b30-843f-af9ec9893c13" />
+User can interact with the chart for more granular analysis and can reference interpretation guidelines on the dashboard to understand the model better.
+3. Then, user can select features to compare accross models for a box visual similar to that shown below.
+<img width="845" height="799" alt="image" src="https://github.com/user-attachments/assets/bf71e381-7e17-4ccf-9c62-975cd3d68dc6" />
+Users can dynamically choose more features or remove features from the select box. Once again, plot is interactive and interpretation guidelines are included in detail.
+
+
