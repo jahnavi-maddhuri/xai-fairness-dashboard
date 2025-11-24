@@ -95,7 +95,7 @@ Once placed in data/, the dashboard detects the new file and allows comparison.
 
 User can interact with the chart for more granular analysis and can reference interpretation guidelines on the dashboard to understand the model better.
 3. Then, user can select features to compare accross models for a box visual similar to that shown below.
-<img width="845" height="799" alt="image" src="https://github.com/user-attachments/assets/bf71e381-7e17-4ccf-9c62-975cd3d68dc6" />
+<img width="808" height="887" alt="image" src="https://github.com/user-attachments/assets/eee1fcfa-5cc4-4991-a491-249d88eb4b2c" />
 
 Users can dynamically choose more features or remove features from the select box. Once again, plot is interactive and interpretation guidelines are included in detail.
 
