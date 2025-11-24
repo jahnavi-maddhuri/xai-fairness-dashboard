@@ -67,13 +67,12 @@ If using the precomputed SHAP files in data/, the dashboard loads immediately!
 Train your model (e.g., Random Forest, XGBoost, Logistic Regression, etc.).
 
 Use the provided generator script template:
-- gen_shap_rf.py
-- gen_shap_xgb.py
-OR a custom gen_shap_your_model.py derived from these examples.
+- `gen_shap_rf.py`
+- `gen_shap_xgb.py` OR a `custom gen_shap_your_model.py` derived from these examples.
 
 Ensure your SHAP output dictionary uses the same feature_name structure as it's comparisons.
 
-Save your results into data/your_shap_file.npz.
+Save your results into `data/your_shap_file.npz`.
 
 Once placed in data/, the dashboard detects the new file and allows comparison.
 
