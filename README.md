@@ -1,4 +1,7 @@
 # XAI Fairness Dashboard
+
+Check out my streamlit app hosted at this link: https://xai-fairness-dashboard.streamlit.app/
+
 **Purpose**
 
 Modern machine-learning systems—especially in domains like loan approval, credit risk, and criminal justice cannot rely on black-box predictions alone. High-stakes decisions demand accountability, transparency, and rigorous interpretability to ensure models are not simply amplifying or reproducing historical bias.
@@ -39,6 +42,8 @@ You are encouraged to add:
 As long as files follow the same schema, they can be compared seamlessly.
 
 ## Installation & Setup
+If you are interested in running this app local to add your own models, plots or change the existing app, follow the steps below.
+
 1. Clone the repository
 ```
 git clone <your-repo-url>
@@ -90,10 +95,12 @@ Once placed in data/, the dashboard detects the new file and allows comparison.
 ### Example Usage
 1. User first selects two models to compare. (If additional models are desired, those must be added prior)
 <img width="826" height="720" alt="image" src="https://github.com/user-attachments/assets/6ec56235-cb19-45a7-890e-e877c254edc0" />
+
 2. Once user hits "Run comparison analysis" the bar graph below shows.
 <img width="788" height="831" alt="image" src="https://github.com/user-attachments/assets/fca49cc3-c3c4-4b30-843f-af9ec9893c13" />
 
 User can interact with the chart for more granular analysis and can reference interpretation guidelines on the dashboard to understand the model better.
+
 3. Then, user can select features to compare accross models for a box visual similar to that shown below.
 <img width="808" height="887" alt="image" src="https://github.com/user-attachments/assets/eee1fcfa-5cc4-4991-a491-249d88eb4b2c" />
 
