@@ -141,11 +141,13 @@ def plot_top_features_two_models(
         margin=dict(l=160, r=40, t=80, b=40),
         paper_bgcolor="white",
         plot_bgcolor="white",
-        font=dict(color="black")
+        font=dict(color="black"),
     )
 
-    fig.update_xaxes(tickfont=dict(color="black")) # , titlefont=dict(color="black")
-    fig.update_yaxes(tickfont=dict(color="black"))
+    fig.update_xaxes(tickfont=dict(color="black"), 
+                     title=dict(font=dict(color="black")))
+    fig.update_yaxes(tickfont=dict(color="black"),
+                     title=dict(font=dict(color="black")))
 
     return fig
 
