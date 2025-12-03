@@ -7,4 +7,3 @@ xgboost
 scikit-learn
 tqdm
 plotly
-sklearn
