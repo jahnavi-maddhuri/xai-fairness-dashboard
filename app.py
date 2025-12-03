@@ -113,6 +113,13 @@ st.markdown(
     <h1 style="text-align:center; color:black;">
         Model <span style="color:#2E7D32;">Fairness</span> Explorer
     </h1>
+    <style>
+    .stSelectbox div[data-baseweb="select"] > div {
+    border: 1px solid #000000 !important;        /* black border */
+    box-shadow: 0 0 0 1px #000000 !important;    /* black outline */
+    border-radius: 10px !important;
+    }
+    </style>
     """,
     unsafe_allow_html=True,
 )
@@ -238,13 +245,30 @@ raw_feature_names = model_results['Random Forest']['feature_names']
 pretty_names = [pretty_feature_name(f) for f in raw_feature_names]
 pretty_to_raw = dict(zip(pretty_names, raw_feature_names))
 
+st.markdown("""
+<style>
+    .stMultiSelect div[data-baseweb="select"] > div {
+    border: 1px solid #000000 !important;        /* black border */
+    box-shadow: 0 0 0 1px #000000 !important;    /* black outline */
+    border-radius: 10px !important;
+    }
+    /* --- SELECTED TAG (CHIP) COLOR --- */
+    .stMultiSelect [data-baseweb="tag"] {
+        background-color: #99ccff !important;  /* blue */
+        color: white !important;
+        border-radius: 6px !important;
+    }
+
+</style>
+""", unsafe_allow_html=True)
+
 selected_pretty = st.multiselect(
         "Select features to compare",
         options=pretty_names,
         default=['Marital Status: Married AF spouse',
                  'Marital Status: Married civ spouse',
                  'Race: Black'
-                 ],   # or [] / some sensible subset
+                 ],
         key="feature_multiselect",
         )
 

@@ -250,13 +250,26 @@ def plot_shap_multi_feature_comparison(
     )
 
     fig.update_layout(
-        title=title,
+        title=dict(
+            text=title,
+            font=dict(color="black")
+        ),
         height=200 + 80 * len(selected_features),
         xaxis_title="SHAP value",
         yaxis_title="Feature",
         boxmode="group",
         template="plotly_white",
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        xaxis=dict(title=dict(font=dict(color="black")),
+                   tickfont=dict(color="black")),
+        yaxis=dict(title=dict(font=dict(color="black")),
+                   tickfont=dict(color="black")),
         legend_title_text="Model",
+        legend=dict(
+            title=dict(font=dict(color="black")),
+            font=dict(color="black")
+        )
     )
 
     # Order features in the same order as requested (top to bottom)
